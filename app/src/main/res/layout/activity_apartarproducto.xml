@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apartar Producto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Producto"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/editTextCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:layout_below="@id/editTextNombreProducto"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/editTextPrecioUnitario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio Unitario"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextCantidad"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del Producto"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:layout_below="@id/editTextPrecioUnitario"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonApartar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apartar"
+        android:layout_below="@id/editTextDescripcion"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:layout_below="@id/buttonApartar"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="313dp"
+        android:layout_height="119dp"
+        android:layout_below="@id/buttonCancelar"
+        android:layout_marginTop="60dp"
+        android:text=""
+        android:textSize="18sp" />
+
+</RelativeLayout>

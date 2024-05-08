@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">DiscotecaProyectofinal</string>
+    <string-array name="pisos_array">
+        <item>Piso 1</item>
+        <item>Piso 2</item>
+        <item>Piso 3</item>
+    </string-array>
+    <string-array name="numero_mesas_array">
+        <item>Mesa 1</item>
+        <item>Mesa 2</item>
+        <item>Mesa 3</item>
+        <!-- Agrega más mesas según sea necesario -->
+    </string-array>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eventos">
+
+    <Button
+        android:id="@+id/buttonBackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al menu "
+        app:layout_constraintBottom_toTopOf="@id/imageEvent1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Primer evento -->
+    <ImageView
+        android:id="@+id/imageEvent1"
+        android:layout_width="308dp"
+        android:layout_height="98dp"
+        android:src="@mipmap/image_event1"
+        app:layout_constraintBottom_toTopOf="@id/textDescription1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonBackToMain" />
+
+    <TextView
+        android:id="@+id/textDescription1"
+        android:layout_width="159dp"
+        android:layout_height="42dp"
+        android:fontFamily="casual"
+        android:text="Karoke "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/imageEvent2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageEvent1" />
+
+    <!-- Segundo evento -->
+    <ImageView
+        android:id="@+id/imageEvent2"
+        android:layout_width="270dp"
+        android:layout_height="124dp"
+        android:src="@mipmap/image_event2"
+        app:layout_constraintBottom_toTopOf="@id/textDescription2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDescription1" />
+
+    <TextView
+        android:id="@+id/textDescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Mejor pareja "
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/imageEvent3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageEvent2" />
+
+    <!-- Tercer evento -->
+    <ImageView
+        android:id="@+id/imageEvent3"
+        android:layout_width="99dp"
+        android:layout_height="105dp"
+        android:src="@mipmap/image_event3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDescription2" />
+
+    <TextView
+        android:id="@+id/textDescription3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Adivinar la cancion "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageEvent3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
